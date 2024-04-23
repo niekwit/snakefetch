@@ -1,26 +1,26 @@
 import setuptools
-
-with open("README.md", "r", encoding = "utf-8") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+long_description = "A simple Python package for fetching snake data."
 
 setuptools.setup(
     name = "snakefetch",
-    version = "0.3",
+    version = "0.5.0",
     author = "Niek Wit",
     author_email = "nw416@cam.ac.uk",
-    description = "A tool to fetch workflow and config files from a Snakemake repository on GitHub",
+    description = "Fetches workflow and config files from a Snakemake repository on GitHub",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url = "package URL",
+    url = "https://github.com/niekwit/snakefetch/tree/main",
     project_urls = {
-        "Bug Tracker": "package issues URL",
+        "Source": "https://github.com/niekwit/snakefetch/tree/main",
     },
     classifiers = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        'Operating System :: POSIX :: Linux', 
     ],
     package_dir = {"": "src"},
     packages = setuptools.find_packages(where="src"),
-    python_requires = ">=3.11"
+    python_requires = ">=3.10"
 )
