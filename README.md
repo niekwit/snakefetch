@@ -1,3 +1,5 @@
+[![Pylint](https://github.com/niekwit/snakefetch/actions/workflows/pylint.yml/badge.svg)](https://github.com/niekwit/snakefetch/actions/workflows/pylint.yml)
+
 # snakefetch
 A tool to fetch workflow and config files from a Snakemake repository on GitHub
 
