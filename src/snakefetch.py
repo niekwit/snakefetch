@@ -61,11 +61,9 @@ def main():
     """
 
     # Command line parser
+    msg = "Fetch config and workflow directories from a versioned Snakemake repository on GitHub"
     parser = argparse.ArgumentParser(prog = "snakefetch",
-                                     description = """Fetch config and 
-                                     workflow directories from a 
-                                     versioned Snakemake repository on 
-                                     GitHub""",)
+                                     description = msg,)
     parser.add_argument(
         "--outdir", "-o",
         type = str,
@@ -85,13 +83,13 @@ def main():
         required = "--version" not in sys.argv,
         help = "Release version of the Snakemake repository on GitHub",
     )
+    h_msg = "Directories to fetch from the Snakemake repository on GitHub (default: %(default)s)"
     parser.add_argument(
         "--target-dirs", "-t",
         dest = "targetdirs",
         type = str,
         default = "config,workflow",
-        help = """Directories to fetch from the Snakemake 
-                  repository on GitHub (default: %(default)s)""",
+        help = h_msg,
     )
     parser.add_argument(
         "--version",
@@ -99,7 +97,7 @@ def main():
         help = "Print snakefetch version and exit",
     )
     args = parser.parse_args()
-    
+
     if args.version:
         print(f"snakefetch version {VERSION}")
         sys.exit(0)
