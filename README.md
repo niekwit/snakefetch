@@ -1,4 +1,6 @@
+![PyPI - Downloads](https://img.shields.io/pypi/dm/snakefetch)
 [![Pylint](https://github.com/niekwit/snakefetch/actions/workflows/pylint.yml/badge.svg)](https://github.com/niekwit/snakefetch/actions/workflows/pylint.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/niekwit/snakefetch/badge)](https://www.codefactor.io/repository/github/niekwit/snakefetch)
 
 # snakefetch
 A tool to fetch workflow and config files from a Snakemake repository on GitHub
