@@ -104,5 +104,3 @@ def main():
 
     # Fetch repo directories
     fetch_repo(args.url, args.repoversion, args.outdir, args.targetdirs)
-
-
