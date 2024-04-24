@@ -39,7 +39,7 @@ options:
 
 ```shell
 $ snakefetch --version
-snakefetch version 0.5.0
+snakefetch version 0.5.1
 ```
 
 ### Fetching files from Snakemake workflow
