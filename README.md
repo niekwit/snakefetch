@@ -1,9 +1,10 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/snakefetch)
 [![Pylint](https://github.com/niekwit/snakefetch/actions/workflows/pylint.yml/badge.svg)](https://github.com/niekwit/snakefetch/actions/workflows/pylint.yml)
+[![Unit Test](https://github.com/niekwit/snakefetch/actions/workflows/unittest.yml/badge.svg)](https://github.com/niekwit/snakefetch/actions/workflows/unittest.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/niekwit/snakefetch/badge)](https://www.codefactor.io/repository/github/niekwit/snakefetch)
 
 # snakefetch
-A tool to fetch workflow and config files from a Snakemake repository on GitHub
+A tool to fetch workflow and config files from a Snakemake repository on GitHub.
 
 Although `snakedeploy` can be used to prepare `Snakemake` workflows, this does not always work.
 
@@ -15,6 +16,11 @@ Although `snakedeploy` can be used to prepare `Snakemake` workflows, this does n
 
 ```shell
 $ pip install snakefetch
+```
+
+To update `snakefetch`:
+```shell
+$ pip install snakefetch -U
 ```
 
 ## Usage
@@ -43,7 +49,7 @@ options:
 
 ```shell
 $ snakefetch --version
-snakefetch version 0.5.1
+snakefetch version 0.5.2
 ```
 
 ### Fetching files from Snakemake workflow
